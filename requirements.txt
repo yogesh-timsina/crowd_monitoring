@@ -1,0 +1,9 @@
+flask==3.0.2
+flask-socketio==5.3.6
+python-socketio==5.11.1
+SQLAlchemy==2.0.30
+opencv-python==4.9.0.80
+numpy==1.26.4
+eventlet==0.36.1
+flask-login==0.6.3
+twilio==9.2.3

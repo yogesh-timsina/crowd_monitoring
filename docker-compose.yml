@@ -1,0 +1,24 @@
+services:
+  web:
+    build: .
+    ports: ["5000:5000"]
+    environment:
+      - DATABASE_URL=sqlite:///crowd.db
+      - CAMERAS=0
+      - CROWD_LIMITS=
+      - ALERT_COOLDOWN_SEC=60
+      - CLIP_DIR=clips
+      - CLIP_SEC=10
+      - CLIP_POST_SEC=5
+      - SMTP_HOST=
+      - SMTP_PORT=587
+      - SMTP_USER=
+      - SMTP_PASS=
+      - FROM_ADDR=alerts@example.com
+      - TO_ADDRS=
+      - TWILIO_SID=
+      - TWILIO_TOKEN=
+      - TWILIO_FROM=
+      - SMS_TO=
+    volumes:
+      - ./clips:/app/clips
